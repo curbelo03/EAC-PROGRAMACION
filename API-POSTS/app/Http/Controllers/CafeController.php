@@ -18,5 +18,5 @@ class CafeController extends Controller
         return Cafe::all();
     }
 
-    
+
 }

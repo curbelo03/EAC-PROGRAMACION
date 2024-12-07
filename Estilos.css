@@ -1,94 +1,148 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #202020;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
-  }
-  .Logo {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100hv; 
-  }
-  .Logo img {
-    width: 300px;
-    height: auto;
-  }
-
-  footer {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-    color: white;
-    width: 100%;
-    position: relative;
-    margin-top: 20px;
-  }
-
-  .Menu {
-    text-align: center;
-  }
-
-  .Menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-  }
-  
-  .Menu ul li {
-    display: inline-block;
-    margin: 0 20px;
-  }
-  
-  .Menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: block;
-  }
-  
-  .Menu ul li a:hover {
-    background-color: #444;
-  }
-
-  .MenuPosteos {
-    position: relative; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.Logo {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100hv; 
+}
+.Logo img {
+  width: 300px; /* Tamaño del logo */
+  height: auto;
 }
 
-  .MenuPosteos ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444444;
-    padding: 10px;
-    list-style-type: none;
-    margin: 0;
-    z-index: 100;
-  }
-  
-  .MenuPosteos:hover ul {
-    display: block;
-  }
-  
-  .MenuPosteos ul li {
-    display: block;
-  }
-  
-  .MenuPosteos ul li a {
-    color: black;
-    padding: 5px 10px;
-    text-decoration: none;
-  }
-  
-  .MenuPosteos ul li a:hover {
-    background-color: #f0f0f0;
-  }
+footer {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.Menu {
+  text-align: center;
+}
+
+.Menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.Menu ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.Menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+}
+
+.Menu ul li a:hover {
+  background-color: #444;
+}
+.MenuPosteos {
+  position: relative; 
+}
+
+.MenuPosteos ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444444;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  z-index: 100;
+}
+
+.MenuPosteos:hover ul {
+  display: block;
+}
+
+.MenuPosteos ul li {
+  display: block;
+}
+
+.MenuPosteos ul li a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.MenuPosteos ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+.BotonInicio {
+  position: fixed;
+  top: 20px; 
+  left: 20px; 
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #f4a261; 
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+.BotonInicio:hover {
+  background-color: #f0f0f0;
+}
+
+.Carrusel {
+  width: 400px;
+  height: 400px; 
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+}
+
+.Carrusel ul {
+  display: flex;
+  width: 100%;
+  animation: slide 20s infinite;
+  padding: 0;
+  margin: 0;
+}
+
+.Carrusel li {
+  list-style: none;
+  flex: 0 0 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Carrusel img {
+  max-width: 100%;
+  max-height: 100%; 
+  object-fit: contain; 
+  display: block;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); } 
+  25% { transform: translateX(-100%); } 
+  50% { transform: translateX(-200%); } 
+  75% { transform: translateX(-300%); } 
+  100% { transform: translateX(0); }
+}
