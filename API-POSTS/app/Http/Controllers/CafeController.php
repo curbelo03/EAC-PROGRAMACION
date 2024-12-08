@@ -13,6 +13,7 @@ class CafeController extends Controller
         $cafe->Titulo = $request->post('Titulo');
         $cafe->Contenido = $request->post('Contenido');
         $cafe->save();
+        return response()->json($cafe, 201);
     }
     public function ListarTodas(Request $request){
         return Cafe::all();
