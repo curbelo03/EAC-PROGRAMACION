@@ -146,3 +146,15 @@ footer {
   75% { transform: translateX(-300%); } 
   100% { transform: translateX(0); }
 }
+
+.cafeteria {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.formulario label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 4px;
+}
