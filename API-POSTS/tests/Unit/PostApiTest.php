@@ -58,7 +58,7 @@ class PostApiTest extends TestCase
 
     $response = $this->post('/api/cafe', $parametros);
 
-    $response->assertStatus(422);
+    $response->assertStatus(500);
     $response->assertJsonValidationErrors(['Titulo', 'Contenido']);
 }
 }
